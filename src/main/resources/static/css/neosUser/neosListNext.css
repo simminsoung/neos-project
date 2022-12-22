@@ -790,6 +790,20 @@ button {
     cursor: pointer;
 }
 
+#searchBtn {
+    position: absolute;
+    right: 0;
+    top: 46%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: -moz-box;
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    right: -2%;
+}
+
 
 
 
@@ -901,6 +915,8 @@ button {
         width: 100%;
         max-width: 100%;
         transition: all .2s;
+        margin: 0 auto;
+        margin-bottom: 10px;
     }
 
     .letspler_TopList {
@@ -1113,7 +1129,7 @@ button {
         display: flex;
         -moz-box-align: center;
         align-items: center;
-        right: 2%;
+        right: 13% !important;
     }
 
     .searchResultSection .searchInputWrap .inputBtnWrap .inputSearchBtn {
@@ -1122,10 +1138,37 @@ button {
 
     .searchResultSection .searchInputWrap .inputBtnWrap .inputSearchBtn img {
         width: 50px;
+        margin-right: 20px !important;
     }
 
 
+    #neosUserSearchBar {
+        display: block;
+        width: 82%;
+        margin-top: 3rem;
+        height: 150px;
+    }
 
+    .moreBtnCss {
+        margin: 0 auto;
+        left: 50% !important;
+        margin-top: 10px !important;
+        margin-bottom: 50px !important;
+    }
+
+    .searchImg {
+
+    }
+
+    .searchCancel {
+        display: block !important;
+        margin-right: -96.3px !important;
+        margin-top: 30px;
+    }
+
+    .cancelSearch{
+        display: none;
+    }
 
 
 

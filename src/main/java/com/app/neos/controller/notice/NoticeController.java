@@ -44,6 +44,9 @@ public class NoticeController {
     public String noticeDetails(Long noticeId, Model model){
         List<NoticeDTO> noticeDTOS = noticeService.findNoticeAll();
 
+        NoticeDTO noticeDTO = noticeService.findByNoticeId(noticeId);
+
+
         int index = noticeDTOS.indexOf(noticeService.findByNoticeId(noticeId));
 
         if(index == 0 && noticeDTOS.size() != 1){
@@ -59,7 +62,7 @@ public class NoticeController {
             model.addAttribute("prevNoticeDTO", noticeDTOS.get(index-1));
             model.addAttribute("nextNoticeDTO", noticeDTOS.get(index+1));
         }
-        model.addAttribute("noticeDTO", noticeService.findByNoticeId(noticeId));
+        model.addAttribute("noticeDTO", noticeDTO);
 
         return "app/notice/noticeDetails";
     }

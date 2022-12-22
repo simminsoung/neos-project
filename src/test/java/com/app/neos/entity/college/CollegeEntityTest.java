@@ -44,7 +44,7 @@ public class CollegeEntityTest {
         collegeDTO2.setCollegeCity("인천광역시");
         collegeDTO2.setCollegeName("인천대학교");
         collegeDTO2.setCollegeLogoFile("/images/admin/college/incheonCollege.png");
-        collegeDTO2.setCollegeEmailDomain("@inha.adu");
+        collegeDTO2.setCollegeEmailDomain("@incheon.adu");
 
         College college2 = collegeDTO2.toEntity();
             collegeRepository.save(college2);
@@ -104,7 +104,7 @@ public class CollegeEntityTest {
         collegeDTO8.setCollegeCity("서울특별시");
         collegeDTO8.setCollegeName("서강대학교");
         collegeDTO8.setCollegeLogoFile("/images/admin/college/sogangCollege.png");
-        collegeDTO8.setCollegeEmailDomain("www.seogang.ac.kr");
+        collegeDTO8.setCollegeEmailDomain("@seogang.ac.kr");
 
         College college8 = collegeDTO8.toEntity();
         collegeRepository.save(college8);
@@ -114,7 +114,7 @@ public class CollegeEntityTest {
         collegeDTO9.setCollegeCity("서울특별시");
         collegeDTO9.setCollegeName("성균관대학교");
         collegeDTO9.setCollegeLogoFile("/images/admin/college/sungkyunkwanCollege.jpg");
-        collegeDTO9.setCollegeEmailDomain("www.sungkyunkwan.ac.kr");
+        collegeDTO9.setCollegeEmailDomain("@sungkyunkwan.ac.kr");
 
         College college9 = collegeDTO9.toEntity();
         collegeRepository.save(college9);
@@ -154,7 +154,7 @@ public class CollegeEntityTest {
         collegeDTO13.setCollegeCity("인천광역시");
         collegeDTO13.setCollegeName("인하대학교");
         collegeDTO13.setCollegeLogoFile("/images/admin/college/inHa.png");
-        collegeDTO13.setCollegeEmailDomain("www.yensei.ac.kr");
+        collegeDTO13.setCollegeEmailDomain("@inha.ac.kr");
 
         College college13 = collegeDTO13.toEntity();
         collegeRepository.save(college13);

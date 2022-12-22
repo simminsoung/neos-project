@@ -137,8 +137,8 @@
                                 <input type="hidden" th:value="${session.loginUser}" name="userId"></input>
                                 <input type="hidden" name="storeReplySecret" class="replyStatus" value="PUBLIC"></input>
                                 <input type="hidden" name="storeId" th:value="*{storeId}" class="storeId"></input>
-                                <input type="text" name="storePoint" th:value="*{storePoint}" class="storePoint"></input>
-                                <input type="text" name="userNeosPoint" th:value="${user.userNeosPoint}" class="userNeosPoint"></input>
+                                <input type="hidden" name="storePoint" th:value="*{storePoint}" class="storePoint"></input>
+                                <input type="hidden" name="userNeosPoint" th:value="${user.userNeosPoint}" class="userNeosPoint"></input>
                                 <div class="section feedInputSection ">
                                     <div class="feedInputWrap">
                                         <textarea class="textarea" name="storeReplyContent"
