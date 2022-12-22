@@ -169,20 +169,20 @@
             <h1 class="tit" style="margin-top: 30px; display : flex; margin-right: -52%;">새로운 네오스인</h1>
 
                 <!--검색바 -->
-                <div class="searchResultSection" >
+                <div class="searchResultSection" id="neosUserSearchBar">
                     <div class="searchInputWrap" style="display : flex">
                         <input   class="searchInput" type="text" placeholder="닉네임을 검색해 주세요!" maxlength="30" value="" style="    padding: 5px;
     margin-right: -30px;
     outline: none;" name="keyword" id="search">
-                        <div class="inputBtnWrap">
-                        <span id="del">
-                            <button class="inputSearchBtn" onclick="searchName()">
-                                <img loading="lazy" src="https://letspl.me/assets/images/ic-search.png" alt="검색" style="margin-top: 45px;">
-                            </button>
-                    </span>
-
-                            <button class="inputinitBtn searchCancel" style=" display: none; display: flex; margin-right: -136px; margin-top: 30px;">
-                                <span style="margin-left: 21px;margin-top: 15px;margin-right: 8px; ">검색 취소</span>
+                        <div class="inputBtnWrap" id="searchBtn">
+                            <span id="del">
+                                <button class="inputSearchBtn">
+    <!--                                <img loading="lazy" src="https://letspl.me/assets/images/ic-search.png" alt="검색" style="margin-top: 45px;">-->
+                                </button>
+                            </span>
+                            <img class="searchImg" onclick="searchName()" loading="lazy" src="https://letspl.me/assets/images/ic-search.png" alt="검색" style="margin-top: 45px; width: 40px; display: block; cursor: pointer;">
+                            <button class="inputinitBtn searchCancel" style=" display: none; display: flex; margin-right: -116.5px; margin-top: 30px;">
+                                <span class="cancelSearch" style="margin-left: 21px;margin-top: 15px;margin-right: 8px; ">검색 취소</span>
                                 <img style="position: relative;top: 12px;height: 20px;" loading="lazy" src="https://letspl.me/assets/images/ic-del.svg" alt="초기화">
                             </button>
                         </div>
@@ -269,7 +269,7 @@
 
 
         </ul>
-        <div class="bigMoreBtn moreBtn"><a>더 불러오기</a></div>
+        <div class="bigMoreBtn moreBtn moreBtnCss"><a>더 불러오기</a></div>
     </div>
         </div>
 
@@ -356,7 +356,7 @@
 
                 </ul>
 
-             <div class="bigMoreBtn moreBtn1"><a>더 불러오기</a></div>
+             <div class="bigMoreBtn moreBtn1 moreBtnCss"><a>더 불러오기</a></div>
             </div>
         </div>
 

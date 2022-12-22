@@ -239,7 +239,7 @@
                                                 <div class="btnWrap">
                                                     <input type="hidden" th:value="*{studyWorkLocation}">
                                                     <button th:if="*{studyLocationStatus.toString =='OFFLINE'}" class="placePick statusCircle"><span>모임 장소</span></button>
-                                                    <button class="statusCircle" style="margin-left: 0px"><span>완료</span>
+                                                    <button th:if="${workProceed.studyWorkWriter.userId==session.loginUser}" class="statusCircle" style="margin-left: 0px"><span>완료</span>
                                                     </button>
                                                 </div>
                                             </div>
@@ -305,6 +305,7 @@
                                 </div>
                             </div>
                             <div class="mileStoneTab ">
+                                <th:block th:if="${session.loginUser == study.userId}">
                                 <div class="mileStoneInputWrap"><input type="text" class="mileStoneTit" id="milestoneTitle_1j"
                                                                        placeholder="목표의 제목을 입력해주세요" maxlength="50" value=""><textarea
                                         class="mileStoneTxt" id="milestoneContent_1j" placeholder="목표의 내용을 입력해주세요" rows="2"
@@ -313,6 +314,7 @@
                                         <button type="button" class="grayBtn milestonePost">등록</button>
                                     </div>
                                 </div>
+                                </th:block>
                                 <h1>진행 중인 목표</h1>
                                 <div class="nowWrapper_1j">
 
